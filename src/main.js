@@ -3,7 +3,7 @@ import data from './data/pokemon/pokemon.js';
 
 /*  import data from './data/pokemon/pokemon.js';  */
 for (let index = 0; index < data.pokemon.length; index++) {
-    const section = document.createElement("section");
+    const section = document.createElement("article");
     const image = document.createElement("img");
     const title = document.createElement("h1");
     section.className = "pokemon-container";
@@ -13,7 +13,7 @@ for (let index = 0; index < data.pokemon.length; index++) {
     image.src = data.pokemon[index].img;
     section.appendChild(title);
     section.appendChild(image);
-    document.body.appendChild(section);
+    document.querySelector("#container").appendChild(section);
 }
 
 console.log(data);
