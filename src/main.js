@@ -1,6 +1,8 @@
 /* import { example } from './data.js'; */
 import data from './data/pokemon/pokemon.js';
 
+console.log (data.pokemon);
+
 /*  import data from './data/pokemon/pokemon.js';  */
 for (let index = 0; index < data.pokemon.length; index++) {
     const section = document.createElement("article");
@@ -15,5 +17,6 @@ for (let index = 0; index < data.pokemon.length; index++) {
     section.appendChild(image);
     document.querySelector("#container").appendChild(section);
 }
+
 
 console.log(data);
