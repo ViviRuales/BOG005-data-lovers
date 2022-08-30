@@ -5,21 +5,38 @@ header{
     justify-content:center
 }
 
-/*ordenar A Z*/
-#OrdenarAZ{
+button {
     border-radius: 19px; 
-    display: flex;
-    width: 300px;
-    height: 30px; 
-}
+    padding: 0.85em 1.5em;
+    font-size: 1 em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0b45c2;
+    border: 1px solid #222;
+    font-family: 'Spartan';
+  }
 
-/*ordenar Z A*/
+  
+/*ordenar A Z
+button{
+    border-radius: 19px;
+    width: 200px;
+    height: 30px; 
+    padding: 5px;
+    justify-content:center;   
+
+}*/
+
+
+/*ordenar Z A
 #OrdenarZA{
     border-radius: 20px;
     display: flex;
-    width: 300px;
+    width: 200px;
     height: 30px; 
-}
+    padding: 5px;
+}*/
 
  #container{
     display:flex;
@@ -29,7 +46,6 @@ header{
     justify-content: space-around;
     text-align: center;
     text-align: flex-end;
-    
 }
 
 article{
@@ -50,7 +66,5 @@ article{
     font-weight: 800;
     font-size: 12px;
     color: #FFFFFF;
-
-
 }
 
