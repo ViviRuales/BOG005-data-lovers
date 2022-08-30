@@ -12,7 +12,8 @@ function sortData(data) {
         section.className = "pokemon-container";
         image.className = "pokemon-image";
         title.className = "pokemon-name";
-        title.textContent = data[index].name;
+        let upperCaseCharacter = data[index].name.charAt(0).toUpperCase();
+        title.textContent = upperCaseCharacter + data[index].name.slice(1);
         image.src = data[index].img;
         section.appendChild(image);
         section.appendChild(title);
