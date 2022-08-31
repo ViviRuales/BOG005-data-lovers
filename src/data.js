@@ -1,12 +1,24 @@
-// estas funciones son de ejemplo
+export function SortOrderAZ(prop) {
+  return function(a, b) {    
+      if (a[prop] > b[prop]) {    
+          return 1;    
+      } else if (a[prop] < b[prop]) {    
+          return -1;    
+      }    
+      return 0;    
+  }    
+}
 
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
+export function SortOrderZA(prop) {
+  return function(a, b) {    
+      if (a[prop] < b[prop]) {    
+          return 1;    
+      } else if (a[prop] > b[prop]) {    
+          return -1;    
+      }    
+      return 0;    
+  }    
+}
 
     
 

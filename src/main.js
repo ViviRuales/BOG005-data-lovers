@@ -1,6 +1,6 @@
 /* import { example } from './data.js'; */
 import data from './data/pokemon/pokemon.js';
-
+import {SortOrderAZ, SortOrderZA} from './data.js';
 sortData(data.pokemon)
 
 function sortData(data) {
@@ -22,27 +22,6 @@ function sortData(data) {
 }
 
 
-function SortOrderAZ(prop) {
-    return function(a, b) {    
-        if (a[prop] > b[prop]) {    
-            return 1;    
-        } else if (a[prop] < b[prop]) {    
-            return -1;    
-        }    
-        return 0;    
-    }    
-}
-
-function SortOrderZA(prop) {
-    return function(a, b) {    
-        if (a[prop] < b[prop]) {    
-            return 1;    
-        } else if (a[prop] > b[prop]) {    
-            return -1;    
-        }    
-        return 0;    
-    }    
-}
 
 const btnOrderAZ = document.getElementById("OrdenarAZ");
 btnOrderAZ.addEventListener("click", OrdenarAZ);
