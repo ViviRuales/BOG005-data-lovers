@@ -1,6 +1,15 @@
 /* import { example } from './data.js'; */
 import data from './data/pokemon/pokemon.js';
 
+
+//Argumento - Es lo que necesita una funcion para funcionar
+function sumar(num1, num2) {
+    num1 + num2;
+}
+
+//Parametro - dato real que se le envia a la funcion
+sumar(5, 3);
+
 sortData(data.pokemon)
 
 function sortData(data) {
@@ -55,7 +64,7 @@ function OrdenarAZ() {
 const btnOrderZA = document.getElementById("OrdenarZA");
 btnOrderZA.addEventListener("click", OrdenarZA);
 
-console.log(data);
+
 function OrdenarZA() {
     let saveData = data.pokemon.sort(SortOrderZA("name"));   
     sortData(saveData);
