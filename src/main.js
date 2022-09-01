@@ -21,8 +21,6 @@ function sortData(data) {
     }
 }
 
-
-
 const btnOrderAZ = document.getElementById("OrdenarAZ");
 btnOrderAZ.addEventListener("click", OrdenarAZ);
 

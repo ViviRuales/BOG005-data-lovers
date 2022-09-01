@@ -64,7 +64,7 @@ describe('SortOrderAZ', () => {
     expect(typeof SortOrderAZ).toBe('function');
   });
 
-  it('Con un argumento de array de data de objetos quee tenga name, returns array de data organizada por name de la A-Z', () => {
+  it('Con un argumento de array de data de objetos que tenga name, returns array de data organizada por name de la A-Z', () => {
     const resultadoAZ = [
     {
       "num": "001",
