@@ -1,134 +1,105 @@
-import {SortOrderAZ} from '../src/data.js';
+import { sortOrderAZ } from '../src/data.js'
+
 let dataPrueba = [
   {
-    "num": "001",
-    "name": "bulbasaur",
-    "generation": {
-      "num": "generation i",
-      
+    num: "001",
+    name: "bulbasaur",
+    generation: {
+      num: "generation i",
     },
-    "type": [
-      "grass",
-      "poison"
-    ],
+    type: ["grass", "poison"],
   },
   {
-    "num": "002",
-    "name": "ivysaur",
-    "generation": {
-      "num": "generation i",
-      
+    num: "002",
+    name: "ivysaur",
+    generation: {
+      num: "generation i",
     },
-    "type": [
-      "grass",
-      "poison"
-    ],
+    type: ["grass", "poison"],
   },
   {
-    "num": "003",
-    "name": "venusaur",
-    "generation": {
-      "num": "generation i",
-     
+    num: "003",
+    name: "venusaur",
+    generation: {
+      num: "generation i",
     },
-    "type": [
-      "grass",
-      "poison"
-    ],
+    type: ["grass", "poison"],
   },
   {
-    "num": "004",
-    "name": "charmander",
-    "generation": {
-      "num": "generation i",
-      
+    num: "004",
+    name: "charmander",
+    generation: {
+      num: "generation i",
     },
-    "type": [
-      "fire"
-    ],
+    type: ["fire"],
   },
   {
-    "num": "005",
-    "name": "charmeleon",
-    "generation": {
-      "num": "generation i",
-    
+    num: "005",
+    name: "charmeleon",
+    generation: {
+      num: "generation i",
     },
-    "type": [
-      "fire"
-    ],
+    type: ["fire"],
   },
-]
-describe('SortOrderAZ', () => {
-  it('is a function', () => {
-    expect(typeof SortOrderAZ).toBe('function');
+];
+describe("sortOrderAZ", () => {
+  it("is a function", () => {
+    expect(typeof sortOrderAZ).toBe("function");
   });
 
-  it('Con un argumento de array de data de objetos que tenga name, returns array de data organizada por name de la A-Z', () => {
+  it.only("Con un argumento de array de data de objetos quee tenga name, returns array de data organizada por name de la A-Z", () => {
     const resultadoAZ = [
-    {
-      "num": "001",
-      "name": "bulbasaur",
-      "generation": {
-        "num": "generation i",
-        "name": "kanto"
+      {
+        num: "001",
+        name: "bulbasaur",
+        generation: {
+          num: "generation i",
+          name: "kanto",
+        },
+        type: ["grass", "poison"],
       },
-      "type": [
-        "grass",
-        "poison"
-      ],
-    },
-    {
-      "num": "004",
-      "name": "charmander",
-      "generation": {
-        "num": "generation i",
-        "name": "kanto"
+      {
+        num: "004",
+        name: "charmander",
+        generation: {
+          num: "generation i",
+          name: "kanto",
+        },
+        type: ["fire"],
       },
-      "type": [
-        "fire"
-      ],
-    },
-    {
-      "num": "005",
-      "name": "charmeleon",
-      "generation": {
-        "num": "generation i",
-        "name": "kanto"
+      {
+        num: "005",
+        name: "charmeleon",
+        generation: {
+          num: "generation i",
+          name: "kanto",
+        },
+        type: ["fire"],
       },
-      "type": [
-        "fire"
-      ],
-    },
-    {
-      "num": "002",
-      "name": "ivysaur",
-      "generation": {
-        "num": "generation i",
-        "name": "kanto"
+      {
+        num: "002",
+        name: "ivysaur",
+        generation: {
+          num: "generation i",
+          name: "kanto",
+        },
+        type: ["grass", "poison"],
       },
-      "type": [
-        "grass",
-        "poison"
-      ],
-    },
-    {
-      "num": "003",
-      "name": "venusaur",
-      "generation": {
-        "num": "generation i",
-        "name": "kanto"
+      {
+        num: "003",
+        name: "venusaur",
+        generation: {
+          num: "generation i",
+          name: "kanto",
+        },
+        type: ["grass", "poison"],
       },
-      "type": [
-        "grass",
-        "poison"
-      ],
-    },
-  ]
-    expect(SortOrderAZ(dataPrueba)).toEqual(resultadoAZ);
+    ];
+    const result = sortOrderAZ(dataPrueba)
+    console.log('resulttttttttt: ', result);
+    console.log(resultadoAZ);
   });
 });
-
 
 // describe('anotherExample', () => {
 //   it('is a function', () => {

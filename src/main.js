@@ -1,9 +1,10 @@
 /* import { example } from './data.js'; */
 import data from './data/pokemon/pokemon.js';
-import {SortOrderAZ, SortOrderZA} from './data.js';
-sortData(data.pokemon)
+import {sortOrderAZ, SortOrderZA, filtrarTipo} from './data.js';
 
-function sortData(data) {
+listPokemon(data.pokemon)
+
+function listPokemon(data) {
     document.querySelector("#container").innerHTML="";
     for (let index = 0; index < data.length; index++) {
         const section = document.createElement("article");
@@ -21,19 +22,44 @@ function sortData(data) {
     }
 }
 
+const dataPokemon = data.pokemon
+console.log (dataPokemon)
+
+/**
+ * Filtrado
+ */
+//Fuego
+  const tipoBtnFire = document.getElementById("fire");
+ tipoBtnFire.addEventListener("click",filtradoFuego);
+
+ function filtradoFuego() {
+    let saveData = filtrarTipo(dataPokemon, "fire");   
+    listPokemon(saveData);
+}
+//Agua
+const tipoBtnWater = document.getElementById("water");
+tipoBtnWater.addEventListener("click",filtradoAgua);
+
+function filtradoAgua() {
+   let saveData = filtrarTipo(dataPokemon, "water");   
+   listPokemon(saveData);
+}
 const btnOrderAZ = document.getElementById("OrdenarAZ");
 btnOrderAZ.addEventListener("click", OrdenarAZ);
 
 function OrdenarAZ() {
-    let saveData = data.pokemon.sort(SortOrderAZ("name"));   
-    sortData(saveData);
+    let saveData = data.pokemon.sort(sortOrderAZ("name"));   
+    listPokemon(saveData);
 }
 
 const btnOrderZA = document.getElementById("OrdenarZA");
 btnOrderZA.addEventListener("click", OrdenarZA);
 
-console.log(data);
+
 function OrdenarZA() {
     let saveData = data.pokemon.sort(SortOrderZA("name"));   
-    sortData(saveData);
+    listPokemon(saveData);
 } 
+
+const btnAgua = document.getElementById("Agua");
+btnAgua.addEventListener("click", Fuego);

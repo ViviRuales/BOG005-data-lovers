@@ -1,5 +1,5 @@
-export function SortOrderAZ(prop) {
-
+export function sortOrderAZ(prop) {
+    console.log('prop: ', prop);
   return function(a, b) {    
       if (a[prop] > b[prop]) {    
           return 1;    
@@ -21,8 +21,11 @@ export function SortOrderZA(prop) {
   }    
 }
 
-
-
+export const filtrarTipo = (data, opcion) => {
+    const dataFiltrada = data.filter (elemento => elemento.type.includes(opcion))
+    return dataFiltrada
+}
+    
 
 
 /*sortData(data, sortBy, sortOrder): esta función sort u ordenar recibe tres parámetros. 
