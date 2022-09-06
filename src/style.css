@@ -5,15 +5,72 @@ header{
     justify-content:center
 }
 
-button {
+#botonesOrdenar {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #botonesFiltrar {
+    text-align: center;
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+
+  #fire {
+    border-radius: 50px; 
+    width: 100px;
+    height: 100px;
+    padding: 0.85em 1.5em;
+    font-size: 1 em;
+    cursor: pointer;
+    color: #ffffff;
+    background:  linear-gradient(55deg, #f70000 0%, #fcf815 100%);
+    border: 1px solid #eedf0d;
+    font-family: 'Spartan';
+    font-size: 15px;
+    font-style: normal;
+    text-align: center;
+  }
+
+  #water {
+    border-radius: 50px; 
+    width: 100px;
+    height: 100px;
+    padding: 0.85em 1.5em;
+    font-size: 1 em;
+    cursor: pointer;
+    color: #ffffff;
+    background:  linear-gradient(55deg, #0094f7 0%, #94c0ce 100%);
+    border: 1px solid #0ee2e9;
+    font-family: 'Spartan';
+    font-size: 15px;
+    font-style: normal;
+    text-align: center;
+  }
+
+
+
+#OrdenarAZ  {
     border-radius: 19px; 
     padding: 0.85em 1.5em;
     font-size: 1 em;
     cursor: pointer;
     text-decoration: none;
     color: #ffffff;
-    background-color: #0b45c2;
-    border: 1px solid #222;
+    background-color: #224ca5;
+    border: 1px solid #224ca5;
+    font-family: 'Spartan';
+  }
+
+  #OrdenarZA  {
+    border-radius: 19px; 
+    padding: 0.85em 1.5em;
+    font-size: 1 em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #224ca5;
+    border: 1px solid #224ca5;
     font-family: 'Spartan';
   }
 
@@ -49,10 +106,11 @@ button{
 }
 
 article{
-    background: linear-gradient(55.56deg, #FC7CFF 0%, #FA5AFD 100%);
+    background: linear-gradient(55.56deg, #00f7ce 0%, #88757579 100%);
     border-radius: 20px;
     margin: 1% 1% 8% 1%;
     height: 100px;
+    width: 150px;
 }
 
 .pokemon-image{
@@ -64,7 +122,7 @@ article{
     font-family: 'Spartan';
     font-style: normal;
     font-weight: 800;
-    font-size: 12px;
+    font-size: 15px;
     color: #FFFFFF;
 }
 

@@ -1,13 +1,30 @@
-// estas funciones son de ejemplo
+export function sortOrderAZ(prop) {
+    console.log('prop: ', prop);
+  return function(a, b) {    
+      if (a[prop] > b[prop]) {    
+          return 1;    
+      } else if (a[prop] < b[prop]) {    
+          return -1;    
+      }    
+      return 0;    
+  }    
+}
 
-export const example = () => {
-  return 'example';
-};
+export function SortOrderZA(prop) {
+  return function(a, b) {    
+      if (a[prop] < b[prop]) {    
+          return 1;    
+      } else if (a[prop] > b[prop]) {    
+          return -1;    
+      }    
+      return 0;    
+  }    
+}
 
-export const anotherExample = () => {
-  return 'OMG';
-};
-
+export const filtrarTipo = (data, opcion) => {
+    const dataFiltrada = data.filter (elemento => elemento.type.includes(opcion))
+    return dataFiltrada
+}
     
 
 
