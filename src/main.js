@@ -61,5 +61,3 @@ function OrdenarZA() {
     listPokemon(saveData);
 } 
 
-const btnAgua = document.getElementById("Agua");
-btnAgua.addEventListener("click", Fuego);
