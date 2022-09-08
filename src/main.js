@@ -1,6 +1,6 @@
 /* import { example } from './data.js'; */
 import data from './data/pokemon/pokemon.js';
-import {sortOrderAZ, SortOrderZA, filtrarTipo} from './data.js';
+import {ordenarAZ, ordenarZA, filtrarTipo} from './data.js';
 
 listPokemon(data.pokemon)
 
@@ -23,7 +23,23 @@ function listPokemon(data) {
 }
 
 const dataPokemon = data.pokemon
-console.log (dataPokemon)
+
+
+/*  Btns Funciones Ordenar */
+
+const btnOrderAZ = document.getElementById("OrdenarAZ");
+btnOrderAZ.addEventListener("click", function (){
+   
+    const orderData =  ordenarAZ()
+    listPokemon(orderData);
+});
+
+
+const btnOrderZA = document.getElementById("OrdenarZA");
+btnOrderZA.addEventListener("click", function(){
+    const orderData = ordenarZA()
+    listPokemon(orderData);
+});
 
 /**
  * Filtrado
@@ -99,14 +115,6 @@ tipoBtnDark.addEventListener("click",filtradoOscuro);
 function filtradoOscuro() {
    let saveData = filtrarTipo(dataPokemon, "dark");   
    listPokemon(saveData);
-}
-
-const btnOrderAZ = document.getElementById("OrdenarAZ");
-btnOrderAZ.addEventListener("click", OrdenarAZ);
-
-function OrdenarAZ() {
-    let saveData = data.pokemon.sort(sortOrderAZ("name"));   
-    listPokemon(saveData);
 }
 
 /* Dragón */
@@ -199,11 +207,6 @@ function filtradoAcero(){
     listPokemon(saveData);
 }
 
-const btnOrderZA = document.getElementById("OrdenarZA");
-btnOrderZA.addEventListener("click", OrdenarZA);
 
 
-function OrdenarZA() {
-    let saveData = data.pokemon.sort(SortOrderZA("name"));   
-    listPokemon(saveData);
-}
+
