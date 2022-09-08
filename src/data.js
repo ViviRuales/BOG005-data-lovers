@@ -1,5 +1,15 @@
+import data from './data/pokemon/pokemon.js';
+export function ordenarAZ() {
+    let saveData = data.pokemon.sort(sortOrderAZ("name"));   
+   
+    return saveData;
+}
+export function ordenarZA() {
+    let saveData = data.pokemon.sort(sortOrderZA("name"));   
+    return saveData;
+}
+
 export function sortOrderAZ(prop) {
-    console.log('prop: ', prop);
   return function(a, b) {    
       if (a[prop] > b[prop]) {    
           return 1;    
@@ -10,7 +20,7 @@ export function sortOrderAZ(prop) {
   }    
 }
 
-export function SortOrderZA(prop) {
+export function sortOrderZA(prop) {
   return function(a, b) {    
       if (a[prop] < b[prop]) {    
           return 1;    

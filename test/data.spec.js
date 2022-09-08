@@ -1,4 +1,4 @@
-import { sortOrderAZ } from '../src/data.js'
+import { ordenarAZ} from '../src/data.js'
 
 let dataPrueba = [
   {
@@ -43,11 +43,9 @@ let dataPrueba = [
   },
 ];
 describe("sortOrderAZ", () => {
-  it("is a function", () => {
-    expect(typeof sortOrderAZ).toBe("function");
-  });
+ 
 
-  it.only("Con un argumento de array de data de objetos quee tenga name, returns array de data organizada por name de la A-Z", () => {
+  it("Con un argumento de array de data de objetos quee tenga name, returns array de data organizada por name de la A-Z", () => {
     const resultadoAZ = [
       {
         num: "001",
@@ -95,9 +93,10 @@ describe("sortOrderAZ", () => {
         type: ["grass", "poison"],
       },
     ];
-    const result = sortOrderAZ(dataPrueba)
-    console.log('resulttttttttt: ', result);
-    console.log(resultadoAZ);
+    const result = ordenarAZ(dataPrueba);
+
+    expect(result).toEqual(resultadoAZ);
+
   });
 });
 
