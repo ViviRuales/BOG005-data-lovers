@@ -101,13 +101,7 @@ function filtradoOscuro() {
    listPokemon(saveData);
 }
 
-const btnOrderAZ = document.getElementById("OrdenarAZ");
-btnOrderAZ.addEventListener("click", OrdenarAZ);
 
-function OrdenarAZ() {
-    let saveData = data.pokemon.sort(sortOrderAZ("name"));   
-    listPokemon(saveData);
-}
 
 /* Dragón */
 const tipoBtnDragon = document.getElementById("dragon");
@@ -199,11 +193,20 @@ function filtradoAcero(){
     listPokemon(saveData);
 }
 
+/* Ordenar*/
+const btnOrderAZ = document.getElementById("OrdenarAZ");
+btnOrderAZ.addEventListener("click", ordenarAZ);
+
+function ordenarAZ() {
+    let saveData = data.pokemon.sort(sortOrderAZ("name"));   
+    listPokemon(saveData);
+}
+
 const btnOrderZA = document.getElementById("OrdenarZA");
-btnOrderZA.addEventListener("click", OrdenarZA);
+btnOrderZA.addEventListener("click", ordenarZA);
 
 
-function OrdenarZA() {
+function ordenarZA() {
     let saveData = data.pokemon.sort(SortOrderZA("name"));   
     listPokemon(saveData);
 }
