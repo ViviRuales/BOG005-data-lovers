@@ -30,7 +30,7 @@ const dataPokemon = data.pokemon
 const btnOrderAZ = document.getElementById("OrdenarAZ");
 btnOrderAZ.addEventListener("click", function (){
    
-    const orderData =  ordenarAZ()
+    const orderData =  ordenarAZ(dataPokemon)
     listPokemon(orderData);
 });
 
@@ -206,7 +206,5 @@ function filtradoAcero(){
     let saveData = filtrarTipo(dataPokemon, "steel");
     listPokemon(saveData);
 }
-
-
 
 

@@ -1,7 +1,7 @@
 import data from './data/pokemon/pokemon.js';
-export function ordenarAZ() {
-    let saveData = data.pokemon.sort(sortOrderAZ("name"));   
-   
+
+export function ordenarAZ(pokelist) {
+    let saveData = pokelist.sort(sortOrderAZ("name"));
     return saveData;
 }
 export function ordenarZA() {
@@ -35,7 +35,27 @@ export const filtrarTipo = (data, opcion) => {
     const dataFiltrada = data.filter (elemento => elemento.type.includes(opcion))
     return dataFiltrada
 }
-    
+ // falta terminar uno por uno con cada uno de los case
+/* function calcular (dataPokemon){
+    dataPokemon.forEach(pokemon => {
+      pokemon.type.forEach(type => {
+        switch (type) {
+            case "fire":
+                
+                break;
+
+            case "water":
+                
+                break;
+
+            default:
+                break;
+        }
+        
+      });
+    });
+
+} */
 
 
 /*sortData(data, sortBy, sortOrder): esta función sort u ordenar recibe tres parámetros. 
