@@ -9,13 +9,13 @@ header{
     text-align: center;
     margin-top: 50px;
   }
-
+/* botones filtro */
   #botonesFiltrar {
     text-align: center;
-    margin-top: 50px;
     justify-content: space-around;
+    margin-top: 50px;
   }
-
+/* fuego */
   #fire {
     border-radius: 50px; 
     width: 100px;
@@ -30,9 +30,11 @@ header{
     font-size: 15px;
     font-style: normal;
     text-align: center;
+    margin: 20px;
   }
-
+/* agua */
   #water {
+    margin: 20px;
     border-radius: 50px; 
     width: 100px;
     height: 100px;
@@ -47,8 +49,9 @@ header{
     font-style: normal;
     text-align: center;
   }
-
+/* planta */
   #grass{
+    margin: 20px;
     border-radius: 50px; 
     width: 100px;
     height: 100px;
@@ -63,8 +66,9 @@ header{
     font-style: normal;
     text-align: center;
   }
-
+/* eléctrico */
 #electric {
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -79,9 +83,9 @@ header{
   font-style: normal;
   text-align: center;
 }
-
 /* Insecto */
 #bug {
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -96,8 +100,9 @@ header{
   font-style: normal;
   text-align: center;
 }
-
+/* hielo */
 #ice {
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -112,8 +117,9 @@ header{
   font-style: normal;
   text-align: center;
 }
-
-#fairy {
+/* hada */
+#fairy { 
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -128,8 +134,9 @@ header{
   font-style: normal;
   text-align: center;
 }
-
+/* oscuro */
 #dark {
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -144,8 +151,9 @@ header{
   font-style: normal;
   text-align: center;
 }
-
+/* dragón */
 #dragon {
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -160,8 +168,9 @@ header{
   font-style: normal;
   text-align: center;
 }
-
+/* lucha */
 #fighting {
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -176,8 +185,9 @@ header{
   font-style: normal;
   text-align: center;
 }
-
+/* volador */
 #flying {
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -192,8 +202,9 @@ header{
   font-style: normal;
   text-align: center;
 }
-
+/* fantasma */
 #ghost {
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -208,7 +219,10 @@ header{
   font-style: normal;
   text-align: center;
 }
-#ground {border-radius: 50px; 
+/* tierra */
+#ground {
+  margin: 20px;
+  border-radius: 50px; 
   width: 100px;
   height: 100px;
   padding: 0.85em 1.5em;
@@ -222,8 +236,9 @@ header{
   font-style: normal;
   text-align: center;
 }
-
+/* norma */
 #normal {
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -238,8 +253,9 @@ header{
   font-style: normal;
   text-align: center; 
 }
-
+/* veneno */
 #poison {
+  margin: 20px;
   border-radius: 50px; 
   width: 100px;
   height: 100px;
@@ -254,9 +270,9 @@ header{
   font-style: normal;
   text-align: center;
 }
-
+/* psíquico */
 #psychic {
-  
+    margin: 20px;
     border-radius: 50px; 
     width: 100px;
     height: 100px;
@@ -271,8 +287,9 @@ header{
     font-style: normal;
     text-align: center; 
    }
-   
+   /* roca */
   #rock {
+    margin: 20px;
     border-radius: 50px; 
     width: 100px;
     height: 100px;
@@ -281,14 +298,18 @@ header{
     cursor: pointer;
     color: #ffffff;
     background:  linear-gradient(55deg, rgb(20, 10, 1) 0%, rgb(131, 106, 24) 100%);
+    box-shadow: 0 8px 16px 0 rgba(131,106,24,0.9), 0 6px 20px 0 rgba(0,0,0,0.19);
     border: 1px solid #2a2b04;
     font-family: 'Spartan';
     font-size: 15px;
     font-style: normal;
     text-align: center;
+    
   }
-  
+  /* acero */
   #steel {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.20);
+    margin: 20px;
     border-radius: 50px; 
     width: 100px;
     height: 100px;
@@ -302,10 +323,31 @@ header{
     font-size: 15px;
     font-style: normal;
     text-align: center;
+   
+
   }
+ /*  //boton calcular curiosidades */
+#botonCuriosidades{  
 
+  display:flex ;
+justify-content: center;
+  }
+ #curiosidades {
+    text-align: center;
+    margin-top: 50px;
+    width: 270px;
+    border-radius: 19px; 
+    padding: 0.85em 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #070000;
+    background-color:red;
+    border: 6px solid #000000;
+    font-family: 'Spartan';
+ }
+ 
 
-
+/* botones ordenar AZ y ZA */
 
 #OrdenarAZ  {
     border-radius: 19px; 
