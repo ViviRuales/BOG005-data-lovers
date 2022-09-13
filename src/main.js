@@ -42,7 +42,7 @@ btnOrderAZ.addEventListener("click", function (){
 
 const btnOrderZA = document.getElementById("OrdenarZA");
 btnOrderZA.addEventListener("click", function(){
-    const orderData = ordenarZA()
+    const orderData = ordenarZA(dataPokemon)
     listPokemon(orderData);
 });
 

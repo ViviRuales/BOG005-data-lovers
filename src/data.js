@@ -1,11 +1,13 @@
-import data from './data/pokemon/pokemon.js';
+// import data from './data/pokemon/pokemon.js';
 
 export function ordenarAZ(pokelist) {
-    let saveData = pokelist.sort(sortOrderAZ("name"));
+    const copia = [...pokelist]
+    let saveData = copia.sort(sortOrderAZ("name"));
     return saveData;
 }
-export function ordenarZA() {
-    let saveData = data.pokemon.sort(sortOrderZA("name"));   
+export function ordenarZA(pokelist) {
+    const copia = [...pokelist]
+    let saveData = copia.sort(sortOrderZA("name"));   
     return saveData;
 }
 
@@ -44,7 +46,6 @@ export function calcular (dataPokemon){
         "dark":0,
         "flying":0,
         "psychic":0,
-        "dark":0,
         "fairy":0,
         "ground":0,
         "dragon":0,
