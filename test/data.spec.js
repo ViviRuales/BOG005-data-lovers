@@ -1,4 +1,4 @@
-import { ordenarAZ} from '../src/data.js'
+import {ordenarAZ} from '../src/data'
 
 let dataPrueba = [
   {
@@ -52,7 +52,6 @@ describe("sortOrderAZ", () => {
         name: "bulbasaur",
         generation: {
           num: "generation i",
-          name: "kanto",
         },
         type: ["grass", "poison"],
       },
@@ -61,7 +60,6 @@ describe("sortOrderAZ", () => {
         name: "charmander",
         generation: {
           num: "generation i",
-          name: "kanto",
         },
         type: ["fire"],
       },
@@ -70,7 +68,6 @@ describe("sortOrderAZ", () => {
         name: "charmeleon",
         generation: {
           num: "generation i",
-          name: "kanto",
         },
         type: ["fire"],
       },
@@ -79,7 +76,6 @@ describe("sortOrderAZ", () => {
         name: "ivysaur",
         generation: {
           num: "generation i",
-          name: "kanto",
         },
         type: ["grass", "poison"],
       },
@@ -88,7 +84,6 @@ describe("sortOrderAZ", () => {
         name: "venusaur",
         generation: {
           num: "generation i",
-          name: "kanto",
         },
         type: ["grass", "poison"],
       },
@@ -100,6 +95,16 @@ describe("sortOrderAZ", () => {
   });
 });
 
+
+/* Pruebas funcion ´"computo"(calcular) */
+
+describe("funcionComputo", () => {
+it ("recive una pokelist y calcula el porcentaje de cada tipo", ()=>{
+  //arrange
+
+})
+
+      
 // describe('anotherExample', () => {
 //   it('is a function', () => {
 //     expect(typeof anotherExample).toBe('function');
@@ -108,4 +113,5 @@ describe("sortOrderAZ", () => {
 //   it('returns `anotherExample`', () => {
 //     expect(anotherExample()).toBe('OMG');
 //   });
-// });
+
+});

@@ -1,6 +1,6 @@
 /* import { example } from './data.js'; */
 import data from './data/pokemon/pokemon.js';
-import {ordenarAZ, ordenarZA, filtrarTipo} from './data.js';
+import {ordenarAZ, ordenarZA, filtrarTipo, calcular} from './data.js';
 
 listPokemon(data.pokemon)
 
@@ -35,7 +35,7 @@ console.log(dataPokemon);
 const btnOrderAZ = document.getElementById("OrdenarAZ");
 btnOrderAZ.addEventListener("click", function (){
    
-    const orderData =  ordenarAZ()
+    const orderData =  ordenarAZ(dataPokemon)
     listPokemon(orderData);
 });
 
@@ -213,3 +213,33 @@ function filtradoAcero(){
     let saveData = filtrarTipo(dataPokemon, "steel");
     listPokemon(saveData);
 }
+
+//botóncuriosidad (calculo)
+const pokeCuriosidad = document.getElementById("curiosidades");
+pokeCuriosidad.addEventListener("click", function(){
+    document.getElementById('modalCuriosidades').style.visibility = "visible";
+    let types = calcular(dataPokemon);
+    document.getElementById('groundType').innerText = types.ground;
+    document.getElementById('fireType').innerText = types.fire;
+    document.getElementById('waterType').innerText = types.water;
+    document.getElementById('flyingType').innerText = types.flying;
+    document.getElementById('normalType').innerText = types.normal;
+    document.getElementById('psychicType').innerText = types.psychic;
+    document.getElementById('grassType').innerText = types.grass;
+    document.getElementById('electricType').innerText = types.electric;
+    document.getElementById('bugType').innerText = types.bug;
+    document.getElementById('iceType').innerText = types.ice;
+    document.getElementById('fairyType').innerText = types.fairy;
+    document.getElementById('darkType').innerText = types.dark;
+    document.getElementById('dragonType').innerText = types.dragon;
+    document.getElementById('fightingType').innerText = types.fighting;
+    document.getElementById('ghostType').innerText = types.ghost;
+    document.getElementById('poisonType').innerText = types.poison;
+    document.getElementById('rockType').innerText = types.rock;
+    document.getElementById('steelType').innerText = types.steel;
+});
+
+const closeModal = document.getElementById('buttonClose');
+closeModal.addEventListener('click', function() {
+    document.getElementById('modalCuriosidades').style.visibility = "hidden";
+})
