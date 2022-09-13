@@ -10,19 +10,24 @@ function listPokemon(data) {
         const section = document.createElement("article");
         const image = document.createElement("img");
         const title = document.createElement("h1");
+       // const number = document.createElement("h2");
         section.className = "pokemon-container";
         image.className = "pokemon-image";
         title.className = "pokemon-name";
+      //  number.className = "pokemon-num";
         let upperCaseCharacter = data[index].name.charAt(0).toUpperCase();
         title.textContent = upperCaseCharacter + data[index].name.slice(1);
         image.src = data[index].img;
         section.appendChild(image);
         section.appendChild(title);
+        //section.appendChild(number);
         document.querySelector("#container").appendChild(section);
     }
-}
+} 
 
 const dataPokemon = data.pokemon
+console.log(dataPokemon);
+
 
 
 /*  Btns Funciones Ordenar */
@@ -52,6 +57,8 @@ btnOrderZA.addEventListener("click", function(){
     let saveData = filtrarTipo(dataPokemon, "fire");   
     listPokemon(saveData);
 }
+
+
 //Agua
 const tipoBtnWater = document.getElementById("water");
 tipoBtnWater.addEventListener("click",filtradoAgua);

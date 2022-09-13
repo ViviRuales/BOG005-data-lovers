@@ -129,6 +129,8 @@ export function calcular (dataPokemon){
 } 
 
 
+
+
 /*sortData(data, sortBy, sortOrder): esta función sort u ordenar recibe tres parámetros. 
 El primer parámetro, data, nos entrega los datos. 
 El segundo parámetro, sortBy, nos dice con respecto a cuál de los campos de la data se quiere ordenar. 
