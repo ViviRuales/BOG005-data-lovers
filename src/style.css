@@ -384,6 +384,15 @@ article{
     color: #FFFFFF;
 }
 
+.pokemon-num{
+  margin-top: -1px;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 11px;
+  color: #2b2b2b;
+}
+
 /* Responsive */
 @media only screen and (min-width: 300px){
   .container{
