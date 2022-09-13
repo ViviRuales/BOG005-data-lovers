@@ -1,380 +1,186 @@
-
 /*logo*/
-header{
-    display: flex;
-    justify-content:center
+header {
+  display: flex;
+  justify-content: center;
 }
 
 #botonesOrdenar {
-    text-align: center;
-    margin-top: 50px;
-  }
+  text-align: center;
+  margin-top: 50px;
+}
 /* botones filtro */
-  #botonesFiltrar {
-    text-align: center;
-    justify-content: space-around;
-    margin-top: 50px;
-  }
-/* fuego */
-  #fire {
-    border-radius: 50px; 
-    width: 100px;
-    height: 100px;
-    padding: 0.85em 1.5em;
-    font-size: 1 em;
-    cursor: pointer;
-    color: #ffffff;
-    background:  linear-gradient(55deg, #f70000 0%, #fcf815 100%);
-    border: 1px solid #eedf0d;
-    font-family: 'Spartan';
-    font-size: 15px;
-    font-style: normal;
-    text-align: center;
-    margin: 20px;
-  }
-/* agua */
-  #water {
-    margin: 20px;
-    border-radius: 50px; 
-    width: 100px;
-    height: 100px;
-    padding: 0.85em 1.5em;
-    font-size: 1 em;
-    cursor: pointer;
-    color: #ffffff;
-    background:  linear-gradient(55deg, #0094f7 0%, #94c0ce 100%);
-    border: 1px solid #0ee2e9;
-    font-family: 'Spartan';
-    font-size: 15px;
-    font-style: normal;
-    text-align: center;
-  }
-/* planta */
-  #grass{
-    margin: 20px;
-    border-radius: 50px; 
-    width: 100px;
-    height: 100px;
-    padding: 0.85em 1.5em;
-    font-size: 1 em;
-    cursor: pointer;
-    color: #ffffff;
-    background:  linear-gradient(55deg, #75f122 0%, #446b04 100%);
-    border: 1px solid #31a005;
-    font-family: 'Spartan';
-    font-size: 15px;
-    font-style: normal;
-    text-align: center;
-  }
-/* eléctrico */
-#electric {
-  margin: 20px;
-  border-radius: 50px; 
+#botonesFiltrar {
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+/*Cada botón*/
+.tipoBtn {
+  border-radius: 50px;
   width: 100px;
   height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
+  padding: 0.6em 0.6em;
+  
   cursor: pointer;
   color: #ffffff;
-  background:  linear-gradient(55deg, #e8f802 0%, #ddbc03 100%);
-  border: 1px solid #e7eb16;
-  font-family: 'Spartan';
+  font-family: "Spartan";
   font-size: 15px;
   font-style: normal;
   text-align: center;
+  margin: 20px;
+}
+
+/* fuego */
+#fire {
+  background: linear-gradient(55deg, #f70000 0%, #fcf815 100%);
+  border: 1px solid #eedf0d;
+}
+/* agua */
+#water {
+  background: linear-gradient(55deg, #0094f7 0%, #94c0ce 100%);
+  border: 1px solid #0ee2e9;
+}
+/* planta */
+#grass {
+  background: linear-gradient(55deg, #75f122 0%, #446b04 100%);
+  border: 1px solid #31a005;
+}
+/* eléctrico */
+#electric {
+  background: linear-gradient(55deg, #e8f802 0%, #ddbc03 100%);
+  border: 1px solid #e7eb16;
 }
 /* Insecto */
 #bug {
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, #0dbb41 0%, #153511f6 100%);
+  background: linear-gradient(55deg, #0dbb41 0%, #153511f6 100%);
   border: 1px solid #031301;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center;
 }
 /* hielo */
 #ice {
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, #cbe9e9 0%, #209becf6 100%);
+  background: linear-gradient(55deg, #cbe9e9 0%, #209becf6 100%);
   border: 1px solid #659de6;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center;
 }
 /* hada */
-#fairy { 
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, #ff99af 0%, #e92063f6 100%);
+#fairy {
+  background: linear-gradient(55deg, #ff99af 0%, #e92063f6 100%);
   border: 1px solid #e476b2;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center;
 }
 /* oscuro */
 #dark {
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, #5e0759 0%, #130006f6 100%);
+  background: linear-gradient(55deg, #5e0759 0%, #130006f6 100%);
   border: 1px solid #46023a;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center;
 }
 /* dragón */
 #dragon {
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, gold 0%, silver 100%);
+  background: linear-gradient(55deg, gold 0%, silver 100%);
   border: 1px solid #c7d0d1;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center;
 }
 /* lucha */
 #fighting {
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, rgb(241, 60, 14) 0%, silver 100%);
+  background: linear-gradient(55deg, rgb(241, 60, 14) 0%, silver 100%);
   border: 1px solid #c7d0d1;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center;
 }
 /* volador */
 #flying {
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, rgb(121, 209, 236) 0%, rgb(192, 192, 192) 100%);
+  background: linear-gradient(
+    55deg,
+    rgb(121, 209, 236) 0%,
+    rgb(192, 192, 192) 100%
+  );
   border: 1px solid #c7d0d1;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center;
 }
 /* fantasma */
 #ghost {
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, rgb(161, 6, 192) 0%, rgb(226, 48, 146) 100%);
+  background: linear-gradient(
+    55deg,
+    rgb(161, 6, 192) 0%,
+    rgb(226, 48, 146) 100%
+  );
   border: 1px solid #ad0e4b;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center;
 }
 /* tierra */
 #ground {
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, rgb(66, 32, 3) 0%, rgb(212, 103, 14) 100%);
+  background: linear-gradient(55deg, rgb(66, 32, 3) 0%, rgb(212, 103, 14) 100%);
   border: 1px solid #3f2405;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center;
 }
 /* norma */
 #normal {
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, rgb(157, 116, 173) 0%, rgb(231, 182, 182) 100%);
+  background: linear-gradient(
+    55deg,
+    rgb(157, 116, 173) 0%,
+    rgb(231, 182, 182) 100%
+  );
   border: 1px solid #d699cc;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center; 
 }
 /* veneno */
 #poison {
-  margin: 20px;
-  border-radius: 50px; 
-  width: 100px;
-  height: 100px;
-  padding: 0.85em 1.5em;
-  font: 1 em ;
-  cursor: pointer;
-  color: #ffffff;
-  background:  linear-gradient(55deg, rgb(163, 11, 223) 0%, rgb(36, 2, 68) 100%);
+  background: linear-gradient(55deg, rgb(163, 11, 223) 0%, rgb(36, 2, 68) 100%);
   border: 1px solid #3e055f;
-  font-family: 'Spartan';
-  font-size: 15px;
-  font-style: normal;
-  text-align: center;
 }
 /* psíquico */
 #psychic {
-    margin: 20px;
-    border-radius: 50px; 
-    width: 100px;
-    height: 100px;
-    padding: 0.85em 1.5em;
-    font: 1 em ;
-    cursor: pointer;
-    color: #ffffff;
-    background:  linear-gradient(55deg, rgb(126, 4, 55) 0%, rgb(238, 5, 180) 100%);
-    border: 1px solid #f3003d;
-    font-family: 'Spartan';
-    font-size: 15px;
-    font-style: normal;
-    text-align: center; 
-   }
-   /* roca */
-  #rock {
-    margin: 20px;
-    border-radius: 50px; 
-    width: 100px;
-    height: 100px;
-    padding: 0.85em 1.5em;
-    font: 1 em ;
-    cursor: pointer;
-    color: #ffffff;
-    background:  linear-gradient(55deg, rgb(20, 10, 1) 0%, rgb(131, 106, 24) 100%);
-    box-shadow: 0 8px 16px 0 rgba(131,106,24,0.9), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border: 1px solid #2a2b04;
-    font-family: 'Spartan';
-    font-size: 15px;
-    font-style: normal;
-    text-align: center;
-    
-  }
-  /* acero */
-  #steel {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.20);
-    margin: 20px;
-    border-radius: 50px; 
-    width: 100px;
-    height: 100px;
-    padding: 0.85em 1.5em;
-    font: 1 em ;
-    cursor: pointer;
-    color: #ffffff;
-    background:  linear-gradient(55deg, rgb(20, 10, 1) 0%, rgb(78, 77, 75) 100%);
-    border: 1px solid #9c9c8e;
-    font-family: 'Spartan';
-    font-size: 15px;
-    font-style: normal;
-    text-align: center;
-   
+  background: linear-gradient(55deg, rgb(126, 4, 55) 0%, rgb(238, 5, 180) 100%);
+  border: 1px solid #f3003d;
+}
+/* roca */
+#rock {
+  background: linear-gradient(55deg, rgb(20, 10, 1) 0%, rgb(131, 106, 24) 100%);
+  box-shadow: 0 8px 16px 0 rgba(131, 106, 24, 0.9),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #2a2b04;
+}
+/* acero */
+#steel {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 
-  }
- /*  //boton calcular curiosidades */
-#botonCuriosidades{  
-
-  display:flex ;
-justify-content: center;
-  }
- #curiosidades {
-    text-align: center;
-    margin-top: 50px;
-    width: 270px;
-    border-radius: 19px; 
-    padding: 0.85em 1.5em;
-    cursor: pointer;
-    text-decoration: none;
-    color: #070000;
-    background-color:red;
-    border: 6px solid #000000;
-    font-family: 'Spartan';
- }
- 
+  background: linear-gradient(55deg, rgb(20, 10, 1) 0%, rgb(78, 77, 75) 100%);
+  border: 1px solid #9c9c8e;
+}
+/*  //boton calcular curiosidades */
+#botonCuriosidades {
+  display: flex;
+  justify-content: center;
+}
+#curiosidades {
+  text-align: center;
+  margin-top: 50px;
+  width: 270px;
+  border-radius: 19px;
+  padding: 0.85em 1.5em;
+  cursor: pointer;
+  text-decoration: none;
+  color: #070000;
+  background-color: red;
+  border: 6px solid #000000;
+  font-family: "Spartan";
+}
 
 /* botones ordenar AZ y ZA */
 
-#OrdenarAZ  {
-    border-radius: 19px; 
-    padding: 0.85em 1.5em;
-    font-size: 1 em;
-    cursor: pointer;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #224ca5;
-    border: 1px solid #224ca5;
-    font-family: 'Spartan';
-  }
+#OrdenarAZ {
+  border-radius: 19px;
+  padding: 0.85em 1.5em;
+  font-size: 1 em;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #224ca5;
+  border: 1px solid #224ca5;
+  font-family: "Spartan";
+}
 
-  #OrdenarZA  {
-    border-radius: 19px; 
-    padding: 0.85em 1.5em;
-    font-size: 1 em;
-    cursor: pointer;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #224ca5;
-    border: 1px solid #224ca5;
-    font-family: 'Spartan';
-  }
+#OrdenarZA {
+  border-radius: 19px;
+  padding: 0.85em 1.5em;
+  font-size: 1 em;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #224ca5;
+  border: 1px solid #224ca5;
+  font-family: "Spartan";
+}
 
-
-  
 /*ordenar A Z
 button{
     border-radius: 19px;
@@ -385,7 +191,6 @@ button{
 
 }*/
 
-
 /*ordenar Z A
 #OrdenarZA{
     border-radius: 20px;
@@ -395,64 +200,64 @@ button{
     padding: 5px;
 }*/
 
- #container{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 5%;
-    justify-content: space-around;
-    text-align: center;
-    text-align: flex-end;
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5%;
+  justify-content: space-around;
+  text-align: center;
+  text-align: flex-end;
 }
 
-article{
-    background: linear-gradient(55.56deg, #00f7ce 0%, #88757579 100%);
-    border-radius: 20px;
-    margin: 1% 1% 8% 1%;
-    height: 100px;
-    width: 150px;
+article {
+  background: linear-gradient(55.56deg, #00f7ce 0%, #88757579 100%);
+  border-radius: 20px;
+  margin: 1% 1% 8% 1%;
+  height: 100px;
+  width: 150px;
 }
 
-.pokemon-image{
-    margin-top: -45px;
+.pokemon-image {
+  margin-top: -45px;
 }
 
-.pokemon-name{
-    margin-top: -2px;
-    font-family: 'Spartan';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 15px;
-    color: #FFFFFF;
+.pokemon-name {
+  margin-top: -2px;
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  color: #ffffff;
 }
-#modalCuriosidades { 
- visibility: hidden;
- position: fixed;
- background-color: rgba(0, 0, 0, 0.8);
- z-index: 1000;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
+#modalCuriosidades {
+  visibility: hidden;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#modalCuriosidades #curiosidad{
+#modalCuriosidades #curiosidad {
   height: 480px;
-  width: 420px ;
+  width: 420px;
   background-color: white;
   overflow-y: auto;
   padding: 8px;
 }
 
-#modalCuriosidades #curiosidad p{
+#modalCuriosidades #curiosidad p {
   width: 100%;
   text-align: center;
 }
 /* Responsive */
-@media (max-width: 640px){
-  .container{
+@media (max-width: 640px) {
+  .container {
     display: flex;
     width: 100%;
     height: 380px;
@@ -463,17 +268,16 @@ article{
     padding: 25px;
     border-radius: 6px;
   }
-  .pokemon-container{
+  .pokemon-container {
     width: 375px;
   }
 }
 
-@media (min-width: 800px){
-  .container{
+@media (min-width: 800px) {
+  .container {
     width: 250px;
-  
   }
-  .pokemon-container{
+  .pokemon-container {
     width: 150px;
   }
 }
